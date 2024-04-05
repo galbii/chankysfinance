@@ -26,10 +26,10 @@ def parse_deposit(input_str):
 
     # Try to convert the second part (amount) to an integer
     try:
-        amount = int(parts[1])
+        amount = float(parts[1])
         return amount
     except ValueError:
-        print("Invalid amount. Please enter a valid integer amount.")
+        print("Invalid amount. Please enter a valid float amount.")
         return None       
 
 if __name__ == "__main__":
